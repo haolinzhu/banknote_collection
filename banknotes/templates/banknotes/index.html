@@ -1,0 +1,10 @@
+{% if country_list %}
+<ul>
+    <h1>Countries and territories</h1>
+    {% for country in country_list %}
+    <li><a href="/banknotes/{{ country }}/">{{ country }}</a></li>
+    {% endfor %}
+</ul>
+{% else %}
+<p>No countries available.</p>
+{% endif %}
